@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách riêng tư Context Lens</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <main class="document">
+    <h1>Chính sách riêng tư</h1>
+    <p>Context Lens, cập nhật ngày 31/10/2026.</p>
+
+    <h2>Tóm tắt</h2>
+    <p>Context Lens giải thích nghĩa của từ theo ngữ cảnh bài đang đọc bằng Claude API của Anthropic, thông qua API key của chính bạn. Nhà phát triển tiện ích không có máy chủ riêng và không nhận, lưu hay xem dữ liệu của bạn. Tiện ích không có quảng cáo và không có công cụ phân tích.</p>
+
+    <h2>Dữ liệu được gửi đi</h2>
+    <p>Chỉ khi tiện ích đang bật trên trang và bạn dừng chuột trên một từ hoặc một đoạn đã bôi đen, hoặc nhấn phím tắt giải thích, các dữ liệu sau được gửi trực tiếp từ trình duyệt của bạn tới Anthropic (<code>api.anthropic.com</code>):</p>
+    <ul>
+      <li>Từ hoặc đoạn đó, cùng câu và đoạn văn chứa nó.</li>
+      <li>Nội dung hiển thị của bài, tối đa 60.000 ký tự đầu. Nội dung trong ô nhập liệu và biểu mẫu không được đọc khi lấy nội dung bài.</li>
+      <li>Tiêu đề trang và địa chỉ trang, không gồm phần sau dấu <code>?</code>.</li>
+      <li>API key của bạn, để xác thực với Anthropic.</li>
+    </ul>
+    <p>Việc Anthropic xử lý dữ liệu này tuân theo <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noreferrer">chính sách riêng tư</a> và điều khoản dịch vụ của Anthropic áp dụng cho tài khoản API của bạn. Dữ liệu không được gửi tới bên nào khác.</p>
+
+    <h2>Dữ liệu lưu trên trình duyệt</h2>
+    <ul>
+      <li><strong>API key và chi phí ước tính theo tháng:</strong> lưu cục bộ trên máy này, không đồng bộ. Key được lưu ở dạng chưa mã hóa trong bộ nhớ của tiện ích, và các trang web không truy cập được.</li>
+      <li><strong>Cài đặt</strong> (model, ngôn ngữ, thời gian dừng chuột, tùy chọn giữ phím Shift): lưu qua tính năng đồng bộ của Chrome nếu bạn đang bật tính năng đó.</li>
+      <li><strong>Câu trả lời đã tra:</strong> chỉ giữ trong bộ nhớ của tab và mất đi khi tải lại hoặc đóng trang.</li>
+    </ul>
+
+    <h2>Quyền truy cập trang web</h2>
+    <p>Mặc định, tiện ích không chạy trên trang nào cho tới khi bạn bật bằng công tắc trong popup. Nếu bạn chọn "Luôn bật trên web này", Chrome sẽ hỏi quyền cho web đó và tiện ích tự chạy trên mọi trang của web đó. Bạn thu hồi bất cứ lúc nào bằng cách tắt công tắc.</p>
+    <p>Khi bật, tiện ích cũng chạy trong các khung nhúng (iframe) của trang mà nó có quyền truy cập. Với khung nhúng từ web khác, popup sẽ hỏi trước, và việc cho phép có tác dụng như đặt web đó ở chế độ luôn bật. Bạn thu hồi quyền này trong phần "Site access" (quyền truy cập trang web) ở trang chi tiết của tiện ích trên Chrome. Khi bạn tra từ trong một khung, nội dung, tiêu đề và địa chỉ được gửi đi là của khung đó.</p>
+
+    <h2>Quyền kiểm soát của bạn</h2>
+    <ul>
+      <li>Tắt tiện ích trên một trang hoặc một web bằng công tắc trong popup.</li>
+      <li>Xóa API key bằng cách để trống ô key trong phần cài đặt rồi lưu.</li>
+      <li>Gỡ tiện ích để xóa toàn bộ dữ liệu mà nó lưu cục bộ.</li>
+    </ul>
+
+    <h2>Cam kết sử dụng hạn chế</h2>
+    <p>Dữ liệu chỉ được dùng để cung cấp tính năng giải thích từ. Dữ liệu không được bán, không được chuyển cho bên thứ ba ngoài Anthropic, không được dùng cho mục đích không liên quan tới tính năng này, và không được dùng để đánh giá tín dụng hay cho vay.</p>
+
+    <h2>Thay đổi và liên hệ</h2>
+    <p>Khi chính sách thay đổi, ngày cập nhật ở đầu trang sẽ được sửa lại. Nếu có câu hỏi, hãy liên hệ qua mục Hỗ trợ trên trang của tiện ích trong Chrome Web Store.</p>
+    <p>Context Lens là sản phẩm độc lập, không liên kết với Anthropic hay Google.</p>
+  </main>
+</body>
+</html>
